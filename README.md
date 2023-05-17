@@ -1,4 +1,6 @@
 # Getting Started with Create React App
+# Created by Syahdan, Firhan, and Imran
+# Program/Folder sebelumnya error jadi di push ulang
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
