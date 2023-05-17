@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
-import NavbarComponent from "../components/Header/NavbarComponent";
-import Google from "../components/Auth/Google";
+import NavbarWithoutSearch from "../components/Header/NavbarWithoutSearch";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { login } from "../redux/actions/authActions";
+import GoogleLogin from "../components/Auth/GoogleLogin";
 
 function Login() {
   const navigate = useNavigate();
@@ -26,7 +26,7 @@ function Login() {
   return (
     <>
       <div className="vh-100">
-        <NavbarComponent />
+        <NavbarWithoutSearch />
 
         <Container className="p-5 mt-5">
           <h1 className="text-center text-white mb-4 mt-4">Login Into Your Account</h1>
@@ -54,7 +54,7 @@ function Login() {
             </Row>
             <Row>
               <Col className="text-center">
-                <Google buttonText="Login with Google 🚀" />
+                <GoogleLogin />
               </Col>
             </Row>
           </Form>

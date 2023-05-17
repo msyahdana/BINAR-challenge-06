@@ -2,10 +2,10 @@ import React from "react";
 import { useGoogleLogin } from "@react-oauth/google";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { Button } from "react-bootstrap";
 import { registerLoginWithGoogle } from "../../redux/actions/authActions";
+import GoogleButton from "react-google-button";
 
-function Google({ buttonText }) {
+function GoogleRegister() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -14,10 +14,10 @@ function Google({ buttonText }) {
   });
 
   return (
-    <Button className="w-25" variant="primary" onClick={() => loginWithGoogle()}>
-      {buttonText}
-    </Button>
+    <div className="d-flex justify-content-center">
+      <GoogleButton label="Register with Google" className="w-40" onClick={() => loginWithGoogle()}></GoogleButton>
+    </div>
   );
 }
 
-export default Google;
+export default GoogleRegister;

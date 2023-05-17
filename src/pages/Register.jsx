@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import NavbarComponent from "../components/Header/NavbarComponent";
+import NavbarWithoutSearch from "../components/Header/NavbarWithoutSearch";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import Google from "../components/Auth/Google";
 import { register } from "../redux/actions/authActions";
+import GoogleRegister from "../components/Auth/GoogleRegister";
 
 function Register() {
   const dispatch = useDispatch();
@@ -31,7 +31,7 @@ function Register() {
   return (
     <>
       <div className="vh-100">
-        <NavbarComponent />
+        <NavbarWithoutSearch />
         <Container className="p-5 mt-5">
           <h1 className="text-center text-white mb-4 mt-4">Register Your Account</h1>
           <Form onSubmit={onSubmit}>
@@ -62,7 +62,7 @@ function Register() {
             </Row>
             <Row>
               <Col className="text-center">
-                <Google buttonText="Register with Google 🚀" />
+                <GoogleRegister />
               </Col>
             </Row>
           </Form>
