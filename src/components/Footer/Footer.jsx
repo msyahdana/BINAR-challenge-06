@@ -1,19 +1,7 @@
 import React from "react";
 import { MDBFooter, MDBContainer, MDBRow, MDBCol } from "mdb-react-ui-kit";
 import { Button } from "react-bootstrap";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaGoogle,
-  FaInstagram,
-  FaLinkedin,
-  FaGithub,
-  FaGem,
-  FaHome,
-  FaEnvelope,
-  FaPhone,
-  FaPrint,
-} from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaGoogle, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function App() {
   const iconSize = 40;
@@ -110,94 +98,49 @@ export default function App() {
       <section className="">
         <MDBContainer className="text-center text-md-start mt-5">
           <MDBRow className="mt-3">
-            <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">
-                <FaGem color="secondary" size={24} className="me-3" />
-                Company name
-              </h6>
+            <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
+              <h6 className="text-uppercase fw-bold mb-4">Team 4</h6>
               <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
+                <a href="#!" className="text-reset">
+                  MUHAMMAD AL IMRAN
+                </a>
+              </p>
+              <p>
+                <a href="#!" className="text-reset">
+                  MUHAMMAD FIRHAN
+                </a>
+              </p>
+              <p>
+                <a href="#!" className="text-reset">
+                  MUHAMMAD SYAHDAN ABDILLAH
+                </a>
               </p>
             </MDBCol>
 
             <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Products</h6>
+              <h6 className="text-uppercase fw-bold mb-4">Email</h6>
               <p>
                 <a href="#!" className="text-reset">
-                  Angular
+                  muhammadalimran22@gmail.com
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  React
+                  muhammadfirhan500@gmail.com
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Vue
+                  msyahdanabdillah@gmail.com
                 </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  Laravel
-                </a>
-              </p>
-            </MDBCol>
-
-            <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
-              <p>
-                <a href="#!" className="text-reset">
-                  Pricing
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  Settings
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  Orders
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  Help
-                </a>
-              </p>
-            </MDBCol>
-
-            <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
-              <p>
-                <FaHome color="secondary" size={24} className="me-3" />
-                New York, NY 10012, US
-              </p>
-              <p>
-                <FaEnvelope color="secondary" size={24} className="me-3" />
-                info@example.com
-              </p>
-              <p>
-                <FaPhone color="secondary" size={24} className="me-3" /> + 01
-                234 567 88
-              </p>
-              <p>
-                <FaPrint color="secondary" size={24} className="me-3" /> + 01
-                234 567 89
               </p>
             </MDBCol>
           </MDBRow>
         </MDBContainer>
       </section>
 
-      <div
-        className="text-center p-4"
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
-      >
-        © 2021 Copyright:
+      <div className="text-center p-4" style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}>
+        © 2023 Copyright:
         <a className="text-reset fw-bold" href="https://react.com/">
           www.react.com
         </a>
