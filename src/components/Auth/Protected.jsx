@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { getMe } from "../../redux/actions/authActions";
+
 function Protected({ children }) {
   const navigate = useNavigate();
   const dispatch = useDispatch();
